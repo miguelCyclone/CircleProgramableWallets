@@ -1,0 +1,26 @@
+{
+    "wallets": [
+        {
+            "id": "f6e665a0-0c69-5925-94c4-250b48f67f1f",
+            "state": "LIVE",
+            "walletSetId": "8230d179-ef5d-5fdb-9744-9ef60e92847c",
+            "custodyType": "DEVELOPER",
+            "address": "0x5aef81f6838b9baae5da8c5506753cb5df7f7245",
+            "blockchain": "MATIC-AMOY",
+            "accountType": "EOA",
+            "updateDate": "2024-10-03T01:03:06Z",
+            "createDate": "2024-10-03T01:03:06Z"
+        },
+        {
+            "id": "1da38fce-63c4-5d90-93b3-90cca4510984",
+            "state": "LIVE",
+            "walletSetId": "8230d179-ef5d-5fdb-9744-9ef60e92847c",
+            "custodyType": "DEVELOPER",
+            "address": "0x47ea51c9dc2e2b700eb0f499675ae9439feca744",
+            "blockchain": "MATIC-AMOY",
+            "accountType": "EOA",
+            "updateDate": "2024-10-03T01:03:06Z",
+            "createDate": "2024-10-03T01:03:06Z"
+        }
+    ]
+}
