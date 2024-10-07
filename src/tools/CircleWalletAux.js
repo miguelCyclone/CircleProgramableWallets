@@ -107,8 +107,8 @@ async function getContract(_contractID) {
 async function depositNativeUP(_userWalletID, _arrParams, _amountDecimalString) {
     const response = await circleDeveloperSdk.createContractExecutionTransaction({
         walletId: _userWalletID,
-        contractAddress: "0xA953D246D93c64B874217231108e5e4100C57B51",
-        abiFunctionSignature: "DepositIntentNative(bytes32 _commitment, bytes32 _trace)",
+        contractAddress: "0x05793E77385175C6F49615e2a302C3f26b1f386F",
+        abiFunctionSignature: "DepositIntentNative(bytes32 _commitmentHash)",
         tokenId: "0c8f8485-f74f-5e28-80f2-3cc4e80ef71c",
         amount: "0.00001",
         abiParameters: _arrParams,
@@ -126,8 +126,8 @@ async function depositNativeUP(_userWalletID, _arrParams, _amountDecimalString) 
 async function settleZKP(_relayerWalletID, _arrParams) {
     const response = await circleDeveloperSdk.createContractExecutionTransaction({
         walletId: _relayerWalletID,
-        contractAddress: "0x4Faf70E7479dA861441e43721fA1E90a109d1805",
-        abiFunctionSignature: "withdraw(uint256[2] memory a, uint256[2][2] memory b, uint256[2] memory c, uint256[14] memory input, bytes[] memory _payload, address[] memory _targetSC, uint256[] memory _payloadAmountPerCall, bytes memory _publicInputParams, bytes32 _dAppGlobalHash, uint8 _function)",
+        contractAddress: "0x5c107208EA989027fE88a5582e4062A23A53dC6e",
+        abiFunctionSignature: "withdraw(uint256[2] memory a, uint256[2][2] memory b, uint256[2] memory c, uint256[14] memory input, bytes[] memory _payload, address[] memory _targetSC, uint256[] memory _payloadAmountPerCall)",
         abiParameters: _arrParams,
         fee: {
             type: 'level',

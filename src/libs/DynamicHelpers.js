@@ -71,7 +71,7 @@ async function getFile(_FILE_NAME){
 }
 
 async function processWithTimedMessage(duration) {
-    console.log(PRINT_BLUE, "Waiting for zkMiners to synchronize the system and for other security updates");
+    console.log(PRINT_BLUE, "Waiting for blokchain probabilistic finality");
 
     // Start loading animation for a specific duration
     await timedLoadingAnimation("...", duration); // 5000 = Run for 5 seconds

@@ -24,6 +24,8 @@ const WALLET_ALICE = "0x57f1c2d2125fbc6aebb243821edef6ef0a39f797"
 const WALLET_ID_ALICE_EOA = "1da38fce-63c4-5d90-93b3-90cca4510984"
 const WALLET_ALICE_EOA = "0x47ea51c9dc2e2b700eb0f499675ae9439feca744"
 
+const SurferMonkeyUP5_ID = "01924f4d-94ef-733f-a645-61962a9cd6c0"
+
 async function main(){
     const walletSetFabric = 'Entity WalletSet A'
     //const wallets = await CircleWallet.createWallet(EOA, [MATIC_AMOY], WALLET_SET_ID)
