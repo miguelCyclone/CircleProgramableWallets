@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Employee Wallet Data</title>
+    <script>
+        async function getWalletData() {
+            const employeeName = document.getElementById('employeeName').value;
+            try {
+                const response = await fetch(`/api/wallet?name=${encodeURIComponent(employeeName)}`);
+                const data = await response.json();
+                if (response.ok) {
+                    document.getElementById('result').innerText = `Wallet Address: ${data.walletAddress}, Salary: ${data.salary} USDC`;
+                } else {
+                    document.getElementById('result').innerText = `Error: ${data.message}`;
+                }
+            } catch (error) {
+                document.getElementById('result').innerText = 'An error occurred: ' + error.message;
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Employee Wallet Information</h1>
+    <label for="employeeName">Enter Employee Name:</label>
+    <input type="text" id="employeeName">
+    <button onclick="getWalletData()">Get Wallet Data</button>
+    <div id="result"></div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+{
+  "name": "sfsf-projman",
+  "version": "1.0.0",
+  "description": "A simple CAP project.",
+  "repository": "<Add your repository here>",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@circle-fin/developer-controlled-wallets": "^4.5.1",
+    "@circle-fin/smart-contract-platform": "^4.3.0",
+    "@sap/cds": "^8",
+    "body-parser": "^1.20.3",
+    "ckey": "^1.0.3",
+    "cors": "^2.8.5",
+    "csv-parser": "^3.0.0",
+    "express": "^4.21.1",
+    "node-forge": "^1.3.1",
+    "snarkjs": "^0.7.4"
+  },
+  "devDependencies": {
+    "@cap-js/cds-types": "^0.6",
+    "@cap-js/sqlite": "^1"
+  },
+  "scripts": {
+    "start": "cds-serve"
+  },
+  "cds": {
+    "requires": {
+      "ECEmployeeProfile": {
+        "kind": "odata-v2",
+        "model": "srv/external/ECEmployeeProfile"
+      },
+      "PLTUserManagement": {
+        "kind": "odata-v2",
+        "model": "srv/external/PLTUserManagement"
+      }
+    }
+  }
+}
